@@ -15,11 +15,6 @@ class UsersController < ApplicationController
       flash.now[:danger] = 'ユーザの登録に失敗しました。'
       render :new
     end
-  
-  def show
-    @user = User.find(params[:id])
-  end  
-    
   end
   
   private
